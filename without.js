@@ -22,23 +22,23 @@ const assertArraysEqual = function(array1, array2) {
 };
 
 // without function using eqArrays (shouldn't use it)
-const without = function(source, itemsToRemove) {
-  let newSource = [];
-  if (!eqArrays(source, itemsToRemove)) {
-    for (let i = 0; i < source.length; i++) {
-      if (source[i] !== itemsToRemove[i]) {
-        newSource.push(source[i]);
-      }
-    }
-    return newSource;
-  }
-  return newSource;
-};
-
-//Method 2 (Better Approach)
-// export const without = function(source, itemsToRemove) {
-//   return source.filter(element => !itemsToRemove.includes(element));
+// const without = function(source, itemsToRemove) {
+//   let newSource = [];
+//   if (!eqArrays(source, itemsToRemove)) {
+//     for (let i = 0; i < source.length; i++) {
+//       if (source[i] !== itemsToRemove[i]) {
+//         newSource.push(source[i]);
+//       }
+//     }
+//     return newSource;
+//   }
+//   return newSource;
 // };
+
+// Method 2 (Better Approach)
+const without = function(source, itemsToRemove) {
+  return source.filter(element => !itemsToRemove.includes(element));
+};
 
 const words = ["hello", "world", "lighthouse"];
 without(words, ["lighthouse"]); // no need to capture return value for this test case
