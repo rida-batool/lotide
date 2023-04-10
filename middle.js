@@ -1,13 +1,10 @@
-
-
 const middle = function(array) {
   if (array.length <= 2) {
     return [];
   }
-  let start = Math.floor((array.length - 1) / 2); //(array.length/2) - 1;
+  let start = Math.floor((array.length - 1) / 2);
   let end = Math.floor((array.length) / 2) + 1;
   return array.slice(start, end);
-
 };
 
 module.exports = middle;
