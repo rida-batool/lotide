@@ -20,4 +20,3 @@ module.exports = {
   without, eqObjects
 };
 
-//console.log(module.exports);
