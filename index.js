@@ -15,17 +15,9 @@ const eqObjects = require('./eqObjects');
 
 
 module.exports = {
-  head: head,
-  tail: tail,
-  middle: middle,
-  eqArrays: eqArrays,
-  countLetters: countLetters,
-  countOnly: countOnly,
-  findKey: findKey,
-  findKeyByValue: findKeyByValue,
-  letterPositions: letterPositions,
-  map: map,
-  takeUntil: takeUntil,
-  without: without,
-  eqObjects: eqObjects
+  head, tail, middle, eqArrays, countLetters, countOnly,
+  findKey, findKeyByValue, letterPositions, map, takeUntil,
+  without, eqObjects
 };
+
+//console.log(module.exports);
