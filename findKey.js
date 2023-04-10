@@ -21,14 +21,14 @@ console.log(assertEqual(findKey(ob1, x => x < 5), "blue"));
 //console.log(findKey(ob1, x => x < 5));
 
 
-// console.log(findKey({
-//   "Blue Hill": { stars: 1 },
-//   "Akaleri": { stars: 3 },
-//   "noma": { stars: 2 },
-//   "elBulli": { stars: 3 },
-//   "Ora": { stars: 2 },
-//   "Akelarre": { stars: 3 }
-// }, x => x.stars === 2)); // => "noma"
+console.log(findKey({
+  "Blue Hill": { stars: 1 },
+  "Akaleri": { stars: 3 },
+  "noma": { stars: 2 },
+  "elBulli": { stars: 3 },
+  "Ora": { stars: 2 },
+  "Akelarre": { stars: 3 }
+}, x => x.stars === 2)); // => "noma"
 
 // console.log(findKey({
 //   "Blue Hill": 1,
