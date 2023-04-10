@@ -1,25 +1,8 @@
-const eqArrays = function(a, b) {
-  if (a.length !== b.length) {
-    return false;
-  } else {
-    for (let i = 0; i < a.length; i++) {
-      if (a[i] !== b[i]) {
-        return false;
-      }
-    }
-    return true;
-  }
-};
 
-const assertArraysEqual = function(array1, array2) {
-  if (eqArrays(array1, array2)) {
-    console.log(`✅✅✅ Assertion Passed: ${array1} === ${array2}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed:  ${array1} !== ${array2}`);
-  }
-};
+// const eqArrays = require('./eqArrays');
+// const assertArraysEqual = require('./assertArraysEqual');
 
-const words = ["ground", "control", "to", "major", "tom"];
+
 
 const map = function(array, callback) {
   const results = [];
@@ -29,15 +12,19 @@ const map = function(array, callback) {
   return results;
 };
 
-const results1 = map(words, word => word[0]);
-console.log(results1);
+module.exports = map;
 
-const results2 = map(words, word => word.length);
-console.log(results2);
+//assert test cases
+// const words = ["ground", "control", "to", "major", "tom"];
+// const results1 = map(words, word => word[0]);
+// console.log(results1);
 
-const results3 = map(words, word => word.toUpperCase());
-console.log(results3);
+// const results2 = map(words, word => word.length);
+// console.log(results2);
 
-assertArraysEqual(results1, ['g', 'c', 't', 'm', 't']); //passed
-assertArraysEqual(results2, [6, 7, 2, 5, 3]); //passed
-assertArraysEqual(results3, ['GROUND', 'CONTROL', 'TO', 'MAJOR', 'TOM']); //passed
+// const results3 = map(words, word => word.toUpperCase());
+// console.log(results3);
+
+// assertArraysEqual(results1, ['g', 'c', 't', 'm', 't']); //passed
+// assertArraysEqual(results2, [6, 7, 2, 5, 3]); //passed
+// assertArraysEqual(results3, ['GROUND', 'CONTROL', 'TO', 'MAJOR', 'TOM']); //passed

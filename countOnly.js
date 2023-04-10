@@ -1,10 +1,5 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    return `✅✅✅ Assertion Passed: ${actual} === ${expected}`;
-  } else {
-    return `🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`;
-  }
-};
+
+//const assertEqual = require('./assertEqual');
 
 //Challenge
 // countOnly will be given an array and an object. 
@@ -30,44 +25,24 @@ const countOnly = function(allItems, itemsToCount) {
   return results;
 };
 
-// const countOnly = function(allItems, itemsToCount) {
+module.exports = countOnly;
 
-// const counts = {};
-// for (let item in itemsToCount) {
-//   let count = 0;
-//   if (itemsToCount[item]) {
-//     allItems.forEach((element) => {
-//       if (element === item) {
-//         count += 1;  //console.log('element is', element, 'count is: ', count);
-//       }
-//     });
-
-//   }
-//   if (count !== 0) {
-//     counts[item] = count;
-//   }
-// };
-// return counts;
-
-// };
+// const firstNames = [
+//   "Karl",
+//   "Salima",
+//   "Agouhanna",
+//   "Fang",
+//   "Kavith",
+//   "Jason",
+//   "Salima",
+//   "Fang",
+//   "Joe"
+// ];
 
 
+// const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
 
-const firstNames = [
-  "Karl",
-  "Salima",
-  "Agouhanna",
-  "Fang",
-  "Kavith",
-  "Jason",
-  "Salima",
-  "Fang",
-  "Joe"
-];
-
-const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
-
-console.log(assertEqual(result1["Jason"], 1));
-console.log(assertEqual(result1["Karima"], undefined));
-console.log(assertEqual(result1["Fang"], 2));
-console.log(assertEqual(result1["Agouhanna"], undefined));
+// console.log(assertEqual(result1["Jason"], 1));
+// console.log(assertEqual(result1["Karima"], undefined));
+// console.log(assertEqual(result1["Fang"], 2));
+// console.log(assertEqual(result1["Agouhanna"], undefined));
