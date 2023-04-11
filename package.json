@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@ridabatool/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "An npm package that provides javascript functionalities similar to lodash library",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/rida-batool/lotide.git"
   },
-  "author": "",
+  "author": "Rida Batool <ridabatool.be13@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/rida-batool/lotide/issues"
